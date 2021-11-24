@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Peminjam" />
+
+    <EditText
+        android:id="@+id/editnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/idjudulbuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editnama"
+        android:text="Judul Buku"/>
+
+    <EditText
+        android:id="@+id/editjudulbuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idjudulbuku"
+        android:layout_marginTop="6dp"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/pengarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editjudulbuku"
+        android:text="Nama Pengarang"/>
+
+    <EditText
+        android:id="@+id/namapengarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editjudulbuku"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namapengarang"
+        android:text="Tahun Terbit"/>
+
+    <EditText
+        android:id="@+id/edittahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tahun"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/jenisbuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittahun"
+        android:text="Jenis Buku"/>
+
+    <EditText
+        android:id="@+id/editjenisbuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jenisbuku"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/pinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editjenisbuku"
+        android:text="Tanggal Meminjam"/>
+
+    <EditText
+        android:id="@+id/editpinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pinjam"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editpinjam"
+        android:text="Simpan"/>
+
+</RelativeLayout>
